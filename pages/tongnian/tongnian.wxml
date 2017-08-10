@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="fir-img">
+      <image src="../image/3.jpg" mode="aspectFill"/>
+  </view>
+  <!-- <view class="music-list">{{items[0].name}}</view> -->
+  <view class="music-list">
+    <view class="song-list" wx:for="{{items}}" wx:for-index="ind" >
+     <view class="song-name" bindtap="play" id="{{ind}}">
+      <text class="songName">{{items[ind].name}}</text>
+      <text class="singer">{{items[ind].author}}</text>
+     </view>
+  </view>
+  </view>
+  <view class="player">
+      <audio poster="{{items[index].poster}}" name="{{items[index].name}}" author="{{items[index].author}}" src="{{items[index].src}}" id="yueyuAudio" controls loop ></audio>
+  </view>
+  
+</view>

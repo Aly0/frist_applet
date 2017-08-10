@@ -1,0 +1,77 @@
+/**index.wxss**/
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+} */
+.usermotto {
+  width:100%;
+  height:30px;
+  line-height:30px;
+  font-size:14px;
+  font-family: "Microsoft YaHei";
+  font-weight:bold;
+  color: #AFFA8E;
+  border:1px solid #AFFA8E;
+  text-align: center;
+}
+
+.swiper {
+  height: 290rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.type{
+  height:65px;
+  display: flex;
+  margin:15px 15px 0 15px;
+  width: 90%;
+}
+.left{
+  display: flex;
+  flex:1;
+}
+.left image{
+ height:65px;
+ width:65px;
+}
+.right{
+  padding-left:15px;
+  font-size: 14px;
+  line-height:24px;
+  display: flex;
+  flex:5;
+  align-self: center;
+}
+.contact-me{
+  width:60px;
+  height: 60px;
+  position:fixed;
+  bottom:20px;
+  right: 0;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #62DABC;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-me contact-button{
+  margin-top: 12px;
+}

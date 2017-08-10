@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/navigator/navigator",
+    "pages/gufeng/gufeng",
+    "pages/liuxing/liuxing",
+    "pages/tongnian/tongnian"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "分享一些我听了很久的歌",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list":
+    [
+     {"pagePath" : "pages/index",
+      "text":"歌单"},
+      {"pagePath": "pages/logs",
+      "text": "推荐"}
+    ],
+    "position":"bottom",
+    "backgroundColor":"#999"
+      
+  }
+}

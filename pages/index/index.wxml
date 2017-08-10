@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">    
+      <block wx:for="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}"  mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+</swiper>  
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <audio poster="{{musics[0].poster}}" name="{{musics[0].name}}" author="{{musics[0].author}}" src="{{musics[0].src}}" id="myAudio" controls loop style="margin-top:20px;"></audio>
+  <view class="type" wx:for="{{types}}" wx:for-index="index" wx:key="id">
+   <navigator url="{{types[index].url}}" hover-class="none" class="left">
+      <image src="{{types[index].src}}" mode="scaleToFill"></image>
+    </navigator>
+  <navigator url="{{types[index].url}}" hover-class="none" class="right">
+  <text>{{types[index].ms}}</text>
+  </navigator>
+  </view>
+  <view class="contact-me">
+    <contact-button size="26" type="default-light"></contact-button>
+    <text>聊聊</text>
+  </view>
+  <!-- <view class="">
+    <button type="default" bindtap="startRecord">录音</button>
+    <button type="primary" bindtap="stopRecord">停止录音</button>
+  </view> -->
+  
+</view>
